@@ -1,0 +1,36 @@
+#PowerShell cheatsheet:
+
+#Stuck? Call for help:
+get-help
+
+#List available commands:
+get-command
+
+#Get to know aliases for different commands:
+get-alias
+
+#Get command syntax:
+get-command -name [name of command which syntax you would like to know] -syntax
+
+#Starting powershell from comand line:
+start powershell
+
+#Clear powershell window:
+clear-host
+
+#Close powershell:
+exit
+
+#Move around filesystem
+get-location
+set-location
+
+#Create file:
+new-item [nazov suboru]
+
+#List content at present location:
+get-childitem
+
+#List content at present location and all subdirectories:
+get-childitem -Recurse
+
