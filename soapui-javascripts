@@ -1,0 +1,11 @@
+// get value from property on test case level
+
+const sourceString = testRunner.getTestCase().getPropertyValue("nameOfPropertyToParse");
+
+// Parsing string based on spaces
+
+const stringToWords = sourceString.split(" "); // splits source string based on spaces and puts them into array
+const extractValue = stringToWords[stringToWords.length-1]; // takes last element of array 
+
+// Assigning value from variable to property on test case level
+testRunner.getTestCase().setPropertyValue("nameOfPropertyToSet", extractValue); 
