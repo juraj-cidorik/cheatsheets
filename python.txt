@@ -2,6 +2,7 @@ Data structures
 
 Tuples
 - could be understood as arrays with special features
+- homogenious or heterogenious - containg data of same or different types
 - immutable - elements of tuple cannot change (caution!: content of variable contained in tuple can change)
   a = 10
   my_tuple = (a, 'randomString', 13)
@@ -37,3 +38,30 @@ Tuples
   my_tuple = 1, 2, 3, 5, 6
   print(my_tuple[2:4])
   --> (3, 5)
+  
+ Named Tuples
+- part of Python Standard Library - collections module
+  https://docs.python.org/3/library/collections.html#collections.namedtuple
+- is not a separate data type
+- it is a function to generate classes
+- needs to be imported
+  from collections import namedtuple
+- syntax
+  Point2D = namedtuple('Point2D', ['x','y'])
+- instantiation
+  pt1 = Point2D(10,20)
+- access parameters with dot notation
+  pt.x
+  --> 10
+  pt.y
+  --> 20
+- get parameter names
+  Point2D = namedtuple('Point2D', ['x','y'])
+  Point2D._fields
+  --> ('x', 'y')
+
+ 
+ 
+ 
+  
+  
